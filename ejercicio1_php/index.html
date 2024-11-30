@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de coincidencias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        input[type="number"] {
+            width: 50px;
+            margin: 5px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Calculadora de vueltas de coincidencia</h1>
+    <form action="calcular.php" method="POST">
+        <label for="vueltas">Vueltas totales:</label>
+        <input type="number" name="vueltas" min="1" required><br>
+
+        <label for="tiempoA">Tiempo de vuelta Corredor A (min):</label>
+        <input type="number" name="tiempoA" min="1" required><br>
+
+        <label for="tiempoB">Tiempo de vuelta Corredor B (min):</label>
+        <input type="number" name="tiempoB" min="1" required><br>
+
+        <input type="submit" value="Calcular">
+    </form>
+
+</body>
+</html>
