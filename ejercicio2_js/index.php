@@ -8,35 +8,7 @@
 </head>
 <body>
 <form method="post" >
-        <label>Ingrese nombre producto</label>
-        <input type="text" id="vueltas">
-
-        <br>
-
-        <label>Ingrese categoria producto</label>
-        <input type="text" id="tiempo">
-
-        <br>
-
-        <label>Ingrese precio producto</label>
-        <input type="number" id="tiempo">
-
-        <br>
-
-        <label>Ingrese unidades producto</label>
-        <input type="number" id="tiempo">
-
-        <button type="submit">Guardar</button>
-    </form>
-    <table border="1">
-        <tr>
-            <th>Nombre producto</th>
-            <th>Categoria producto</th>
-            <th>Precio producto</th>
-            <th>Unidades producto</th>
-        </tr>
         <?php
-
         $nombre = $_POST['nombre'];
         $categoria = $_POST['categoria'];
         $precio = $_POST['precio'];
